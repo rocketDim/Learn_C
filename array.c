@@ -1,36 +1,37 @@
 #include <stdio.h>
 
+const int size = 5;
+
+int print_array(int data[size])
+{
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d", data[i]);
+        if ((i + 1) < size)
+            printf(", ");
+    }
+    printf("\n");
+
+    return 0;
+}
+
 int main()
 {
-    int i;
-    const int size = 5;
     int arr[size];
 
-    for (i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
         arr[i] = i - 2;
     }
 
-    for (i = 0; i < size; i++)
-    {
-        printf("%d", arr[i]);
-        if ((i + 1) < size)
-            printf(", ");
-    }
-    printf("\n");
+    print_array(arr);
 
-    for (i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
         arr[i] = arr[i] + i;
     }
 
-    for (i = 0; i < size; i++)
-    {
-        printf("%d", arr[i]);
-        if ((i + 1) < size)
-            printf(", ");
-    }
-    printf("\n");
+    print_array(arr);
 
     return 0;
 }
