@@ -2,7 +2,10 @@
 
 int main()
 {
-    printf("Hello, World!!!!\n");
+    char name[50];
+    printf("Введите имя: ");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
 
     return 0;
 }
