@@ -30,8 +30,7 @@ int main()
         {
             chet++;
         }
-
-        if (arr[i] % 2 != 0)
+        else
         {
             nech++;
         }
