@@ -16,6 +16,9 @@ int main()
         arr[i] = rand() % 41;
     }
 
+    arr[0] = 1;
+    arr[1] = arr[2] = arr[3] = arr[4] = arr[5] = 2;
+
     for (int i = 0; i < N; i++)
     {
         printf("%d ", arr[i]);
@@ -23,19 +26,14 @@ int main()
     printf("\n");
 
     int chet = 0;
-    int nech = 0;
     for (int i = 0; i < N; i++)
     {
         if (arr[i] % 2 == 0)
         {
             chet++;
         }
-        else
-        {
-            nech++;
-        }
     }
-    printf("Четные: %d\nНечетные: %d\n",  chet, nech);
+    printf("Четные: %d\nНечетные: %d\n", chet, (N - chet));
 
     return 0;
 }
