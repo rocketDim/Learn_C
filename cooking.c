@@ -41,32 +41,35 @@ void cook_food();
 // выкинуть в мусорку
 void trash_food();
 
+void process_food()
+{
+    if (is_good_food() == 1)
+    {
+        cook_food();
+    }
+    else
+    {
+        trash_food();
+    }
+}
+
+void process_box()
+{
+    while (is_empty_box() == 0)
+    {
+        take_food();
+        process_food();
+    }
+}
+
 void main()
 {
-    // начало
-
     while (any_box() == 1)
     {
         closest_box();
         open_box();
-
-        while (is_empty_box() == 0)
-        {
-            take_food();
-
-            if (is_good_food() == 1)
-            {
-                cook_food();
-            }
-            else
-            {
-                trash_food();
-            }
-        }
-
+        process_box();
         close_box();
         trash_box();
     }
-
-    // конец
 }
