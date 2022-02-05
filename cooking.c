@@ -45,25 +45,28 @@ void main()
 {
     // начало
 
-    closest_box();
-    open_box();
-
-    while (is_empty_box() == 0)
+    while (any_box() == 1)
     {
-        take_food();
+        closest_box();
+        open_box();
 
-        if (is_good_food() == 1)
+        while (is_empty_box() == 0)
         {
-            cook_food();
+            take_food();
+
+            if (is_good_food() == 1)
+            {
+                cook_food();
+            }
+            else
+            {
+                trash_food();
+            }
         }
-        else
-        {
-            trash_food();
-        }
+
+        close_box();
+        trash_box();
     }
-
-    close_box();
-    trash_box();
 
     // конец
 }
