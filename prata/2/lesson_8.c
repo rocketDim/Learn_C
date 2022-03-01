@@ -18,11 +18,10 @@ void one_three(void)
 {
     printf("один\n");
     two();
-    printf("\n");
     printf("три\n");
 
 }
 void two(void)
 {
-    printf("два");
+    printf("два\n");
 }
