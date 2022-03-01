@@ -9,10 +9,10 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/out/${fileBasenameNoExtension}"
+                "${workspaceFolder}/.out/${relativeFileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
-                "cwd": "${fileDirname}/out"
+                "cwd": "${workspaceFolder}/.out/${relativeFileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
@@ -21,7 +21,30 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Задача создана отладчиком."
+            "detail": "Задача создана отладчиком.",
+            "dependsOn": [
+                "Clear output dir",
+                "Create output dir"
+            ],
+            "dependsOrder": "sequence"
+        },
+        {
+            "type": "shell",
+            "label": "Create output dir",
+            "command": "mkdir",
+            "args": [
+                "-p",
+                "${workspaceFolder}/.out/${relativeFileDirname}"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "Clear output dir",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceFolder}/.out"
+            ]
         }
     ],
     "version": "2.0.0"

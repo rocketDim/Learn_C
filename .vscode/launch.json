@@ -8,7 +8,7 @@
             "name": "gcc - Сборка и отладка активного файла",
             "type": "lldb",
             "request": "launch",
-            "program": "${fileDirname}/out/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/.out/${relativeFileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
