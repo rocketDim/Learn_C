@@ -4,10 +4,9 @@ int main(void)
 {
     int age;
     float sek;
-    sek = 3.156e7 * age;
     printf("Input age: ");
     scanf("%d", &age);
-    printf("My age: %d, my sekonds: %.2f\n", age, sek);
+    printf("My age: %d, my sekonds: %.2f\n", age, 3.156e7 * age);
 
     return 0;
 }
