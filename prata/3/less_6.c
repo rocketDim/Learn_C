@@ -2,13 +2,11 @@
 
 int main(void)
 {
-    int qt;
-    float mol;
-    mol = ((3.0e-23) * 950);
+    float qt;
 
     printf("Input quart: ");
-    scanf("%d", &qt);
-    printf("Молекулы: %.2f\n", mol);
+    scanf("%f", &qt);
+    printf("Молекулы: %.2f\n", (950 / (3.0e-23)) * qt);
 
     return 0;
 }
