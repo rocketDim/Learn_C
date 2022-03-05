@@ -6,7 +6,10 @@ int main(void)
     
     printf("Введите числовое значение: ");
     scanf("%d", &sim);
-    printf("Значение %d равно символу %c\n", sim, sim);
+
+    char c = sim;
+
+    printf("Значение %d равно символу %c\n", sim, c);
     
     return 0;
 }
