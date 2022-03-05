@@ -2,11 +2,15 @@
 
 int main(void)
 {
-    int cup;
+    float cup;
 
     printf("Введите кол-во чашек: ");
-    scanf("%d", &cup);
-    printf("Пинта:%.1f , Унция:%d , Стол. ложка: %d , Чайн. ложка: %d\n" , (0.5 * cup), (8 * cup), (16 * cup), (48 * cup));
+    scanf("%f", &cup);
+    printf("Пинта: %f , Унция: %f , Стол. ложка: %f , Чайн. ложка: %f\n",
+           (cup / 2.0),
+           (cup * 8.0),
+           (cup * 8.0 * 2.0),
+           (cup * 8.0 * 2.0 * 3.0));
 
-     return 0;
+    return 0;
 }

@@ -2,11 +2,10 @@
 
 int main(void)
 {
-    int age;
-    float sek;
+    float age;
     printf("Input age: ");
-    scanf("%d", &age);
-    printf("My age: %d, my sekonds: %.2f\n", age, 3.156e7 * age);
+    scanf("%f", &age);
+    printf("My age: %f, my seconds: %f\n", age, 3.156e7 * age);
 
     return 0;
 }
