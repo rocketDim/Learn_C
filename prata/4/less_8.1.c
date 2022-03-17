@@ -1,21 +1,27 @@
 #include <stdio.h>
-#define kilom 0.6215
-#define liter 0.2642
+
+#define kilom_in_mils 1.609
+#define litr_in_gallon 3.785
 
 int main(void)
-
 {
     float gallon, mile;
-    float lit, km;
+    float lit, km, mpg, lpr;
 
     printf("Кол-во миль: ");
     scanf("%f", &mile);
+    
     printf("Кол-во галлонов: ");
     scanf("%f", &gallon);
-    printf("Кол-во миль на одном галлоне: %.1f\n", (mile / gallon));
-    lit = gallon * liter;
-    km = (mile * kilom);
-    printf("Кол-во литров на 100 км: %.1f\n", (km / lit));
+
+    mpg = mile / gallon;
+    
+    printf("Кол-во миль на одном галлоне: %.1f\n", mpg);
+   
+    lit = (gallon * litr_in_gallon);
+    km = (mile * kilom_in_mils);
+    lpr = ((100 * lit) / (mpg * km));
+    printf("Кол-во литров на 100 км: %.2f\n", lpr);
 
     return 0;
 }
