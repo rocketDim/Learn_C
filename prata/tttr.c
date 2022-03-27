@@ -8,9 +8,9 @@ int main()
 float weight, volume;
 int size, letters;
 char name[40]; 
-printf("Здравствуйте!Каквас зовут?\n"); 
+printf("Здравствуйте! Как вас зовут? \n"); 
 scanf("%s", name);
-printf("%s, сколько вы весите в фунтах?", name); 
+printf("%s, сколько вы весите в фунтах?\n", name); 
 scanf("%f", &weight);
 size = sizeof name;
 letters = strlen(name);
