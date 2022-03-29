@@ -6,7 +6,7 @@
 int main(void)
 {
     float gallon, mile;
-    float lit, km, mpg, lpr;
+    float lit, km;
 
     printf("Кол-во миль: ");
     scanf("%f", &mile);
@@ -14,9 +14,8 @@ int main(void)
     printf("Кол-во галлонов: ");
     scanf("%f", &gallon);
 
-    mpg = mile / gallon;
     
-    printf("Кол-во миль на одном галлоне: %.1f\n", mpg);
+    printf("Кол-во миль на одном галлоне: %.1f\n", (mile / gallon));
    
     lit = (gallon * gallon_in_lit);
     km = (mile * mils_in_km);
