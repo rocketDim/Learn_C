@@ -3,14 +3,12 @@
 
 int main(void)
 {
-    char name[10];
-    char sur[10];
+    char name[40];
+    char sur[40];
     printf("Kaк вас зовут? ");
     scanf("%s %s", name, sur);
     
-    printf("%*s %*s\n%*zd %*zd\n", 10, name, 10, sur, 10, strlen(name), 10, strlen(sur));
+    printf("%s %s\n%*d %*d\n", name, sur, (int) strlen(name), (int) strlen(name), (int) strlen(sur), (int) strlen(sur));
 
-    printf("%-*s %-*s\n%-*zd %-*zd\n", 10, name, 10, sur, 10, strlen(name), 10, strlen(sur));
-
-    return 0;
+    printf("%s %s\n%*d %-*d\n", name, sur, (int) strlen(name) * -1, (int) strlen(name), (int) strlen(sur), (int) strlen(sur));
 }
