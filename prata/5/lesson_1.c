@@ -1,21 +1,23 @@
 #include <stdio.h>
-#define MIN_IN_CLOCK 60
+#define MIN_IN_HOUR 60
 
 int main(void)
 
 {
-    int sec, min, left;
+    int min, hour, left;
 
-    printf("Введите количество секунд:\n");
-    scanf("%d", &sec);
+    printf("Введите количество минут: ");
+    scanf("%d", &min);
 
-    while (sec > 0)
+    while (min > 0)
     {
-        min = sec / MIN_IN_SEC;
-        left = sec % MIN_IN_SEC;
+        hour = min / MIN_IN_HOUR;
+        left = min % MIN_IN_HOUR;
+        
+        printf ("%d минут - это %d часов и %d минут\n", min, hour, left);
 
         printf("Введите следующее значение:\n");
-        scanf("%d", &sec);
+        scanf("%d", &min);
     }
 
     printf("Готово!\n");
