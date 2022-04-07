@@ -2,11 +2,12 @@
 int main(void)
 
 {
-    int count, sum;
+    int count, sum, num;
     count = 0;
     sum = 0;
+    scanf("%d", &num);
     
-    while (count++ < num)
+    while (count++ > 0)
         
         sum = sum + count;
     
