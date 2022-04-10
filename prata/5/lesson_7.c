@@ -1,25 +1,20 @@
 #include <stdio.h>
 
-int kube(double num, double kub)
+void kube(double numer)
 {
-    double num, kub;
-    kub = num * num * num;
+    double kub;
+    kub = numer * numer * numer;
 
-    printf("%lf ", kub);
-
-    return 0;
+    printf("%.2lf\n", kub);
 }
 
 int main(void)
 {
-    double num, kub;
-
+    double num;
     printf("Введите число: ");
     scanf("%lf", &num);
 
-    kub = num * num * num;
-
-    printf("%lf ", kub);
+    kube(num);
 
     return 0;
 }
