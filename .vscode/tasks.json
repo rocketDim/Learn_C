@@ -23,7 +23,7 @@
             },
             "detail": "Задача создана отладчиком.",
             "dependsOn": [
-                "Clear output dir",
+            //    "Clear output dir",
                 "Create output dir"
             ],
             "dependsOrder": "sequence"
