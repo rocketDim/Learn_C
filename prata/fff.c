@@ -8,4 +8,3 @@ rv = printf("Boдa закипает при %d градусах no Фаренге
 printf("Функция printf() вывела %d символов.\n",rv); 
 
 return 0;
-}

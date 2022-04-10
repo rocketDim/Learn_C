@@ -2,14 +2,17 @@
 
 int main(void)
 {
-    int num = 0;
+    int num;
     
     printf("Введите целое число: ");
     scanf("%d", &num);
 
-    while (num < 20)
+    int fin = num + 10;
+
+    while (num <= fin)
     {
-        printf("%d ", num++);
+        printf("%d ", num);
+        num++;
     }
 
     return 0;
