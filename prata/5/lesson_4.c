@@ -2,6 +2,8 @@
 #define FT_IN_SM  30.48
 #define INCH_IN_SM  2.54
 
+// 1 ft == 12 inch
+
 int main(void)
 
 {
