@@ -2,22 +2,32 @@
 
 int temperatures(double far)
 {
-    double const cel = 5.0 / 9.0 * (far - 32.0); // не понятно про 3 конст., если одну вводит пользователь?
-    double const kel = cel + 273.16;
-    printf("Фаренгейт F: %.2lf\nЦельсий C: %.2lf\nКельвин K: %.2lf\n", far, cel, kel);
+    double cel, kel;
+    double const TEM_1 = 32.0;
+    double const TEM_2 = 5.0;
+    double const TEM_3 = 9.0;
+    double const TEM_4 = 273.16;
+
+    cel = TEM_2 / TEM_3 * (far - TEM_1);
+    kel = cel + TEM_4;
+
+    printf("Фаренгейт F: %8.2lf\nЦельсий C: %10.2lf\nКельвин K: %10.2lf\n", far, cel, kel);
 
     return 0;
 }
 int main(void)
 {
-    double far, cel, kel;
-    while(far   )
-    {
+    double temp_far;
     printf("Ведите температуру по Фаренгейту: ");
-    scanf("%lf", &far);
+    scanf("%lf", &temp_far);
 
-    temperatures(far);
+    while (temp_far)
+    {
+        temperatures(temp_far);
+        printf("Ведите температуру по Фаренгейту: ");
+        scanf("%lf", &temp_far);
     }
+    printf("Готово!\n");
 
     return 0;
 }
