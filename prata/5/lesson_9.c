@@ -18,13 +18,11 @@ int main(void)
 {
     double temp_far;
     printf("Ведите температуру по Фаренгейту: ");
-    scanf("%lf", &temp_far);
 
-    while (double temp_far)
+    while (scanf("%lf", &temp_far) == 1)
     {
         temperatures(temp_far);
         printf("Ведите температуру по Фаренгейту: ");
-        scanf("%lf", &temp_far);
     }
     printf("Готово!\n");
 
