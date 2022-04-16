@@ -20,7 +20,7 @@ int main(void)
     printf("Ведите температуру по Фаренгейту: ");
     scanf("%lf", &temp_far);
 
-    while (temp_far)
+    while (double temp_far)
     {
         temperatures(temp_far);
         printf("Ведите температуру по Фаренгейту: ");
