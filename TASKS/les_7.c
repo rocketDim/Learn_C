@@ -1,9 +1,6 @@
 // Программа показывает работу функции
 #include <stdio.h>
-void smile(void) // функция smille
-{
-    printf("Улыбайся!");
-}
+void smile(void); // прототип функции
 int main(void)
 {
     smile(); // вызов функции
@@ -16,4 +13,8 @@ int main(void)
     smile(); // вызов функции
     printf("\n");
     return 0;
+}
+void smile(void) // функция smille
+{
+    printf("Улыбайся!");
 }
