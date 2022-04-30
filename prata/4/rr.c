@@ -1,15 +1,19 @@
 #include <stdio.h>
 int main(void)
 {
-    char a = 32;
-
-    printf("x");
-
-    while (a = 4)
+    int height = 1;
+    while(height <= 3)
     {
-        printf("%c", a);
-        a++;
+        printf("x\n");
+        height++;
     }
-    printf("x\n");
+    int wight = 1;
+    while(wight <= 8)
+    {
+        printf(" ");
+        wight++;
+    }
+
+
     return 0;
 }
