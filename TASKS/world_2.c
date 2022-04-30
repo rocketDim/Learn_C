@@ -2,18 +2,19 @@
 int main(void)
 {
     int height = 1;
-    while(height <= 3)
-    {
-        printf("x\n");
-        height++;
-    }
     int wight = 1;
-    while(wight <= 8)
+    while (height <= 3)
     {
-        printf(" ");
-        wight++;
+        printf("x");
+        height++;
+        
+        while (wight <= 8)
+        {
+            printf(" ");
+            wight++;
+        }
+        printf("\n");
     }
-
 
     return 0;
 }
