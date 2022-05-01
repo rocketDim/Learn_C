@@ -1,3 +1,4 @@
+//Программа переводит число в символ по коду в ASCII
 #include <stdio.h>
 int main(void)
 {
