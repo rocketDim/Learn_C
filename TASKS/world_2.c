@@ -1,19 +1,13 @@
 #include <stdio.h>
 int main(void)
 {
-    int height = 1;
-    int wight = 1;
-    while (height <= 3)
+    int HEIGHT = 4;
+    int WIDTH = 8;
+    int i, j;
+    while (WIDTH > 0)
     {
         printf("x");
-        height++;
-        
-        while (wight <= 8)
-        {
-            printf(" ");
-            wight++;
-        }
-        printf("\n");
+        WIDTH--;
     }
 
     return 0;
