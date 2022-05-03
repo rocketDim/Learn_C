@@ -1,27 +1,21 @@
+// Задача с прямоугольником
 #include <stdio.h>
 
 int main(void)
 {
-    int n = 0;
-    while (n < 8)
-    {
+    int n;
+    for (n = 0; n < 8; n++)
         printf("x");
-        n++;
-    }
     printf("\n");
 
-    int a = 1;
-    while (a < 4)
-    {
-        printf("x      x\n");
-        a++;
-    }
-    int t = 0;
-    while (t < 8)
-    {
+    int a;
+    char b = 'x';
+    for (a = 1; a < 4; a++)
+        printf("%c%7c\n", b, b);
+
+    int t;
+    for (t = 0; t < 8; t++)
         printf("x");
-        t++;
-    }
     printf("\n");
     return 0;
 }
