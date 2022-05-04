@@ -1,21 +1,33 @@
 // Задача с прямоугольником
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    int n;
-    for (n = 0; n < 8; n++)
+    int width = 8;
+    int height = 6;
+    int i, j;
+    for (i = 0; i < width; i++)
+    {
         printf("x");
+    }
     printf("\n");
 
-    int a;
-    char b = 'x';
-    for (a = 1; a < 4; a++)
-        printf("%c%7c\n", b, b);
-
-    int t;
-    for (t = 0; t < 8; t++)
+    for (i = 0; i < height - 2; i++)
+    {
         printf("x");
+        for (j = 0; j < width -2; j++)
+        {
+            printf(" ");
+        }
+        printf("x");
+        printf("\n");
+    }
+
+    for (i = 0; i < width; i++)
+    {
+        printf("x");
+    }
     printf("\n");
     return 0;
 }
