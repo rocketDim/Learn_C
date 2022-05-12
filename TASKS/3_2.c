@@ -1,3 +1,4 @@
+// Программа выводит -5 5 -5
 #include <stdio.h>
 void show(int m);
 int main(void)
