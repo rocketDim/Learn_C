@@ -1,14 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(void)
 {
-    int HEIGHT = 4;
-    int WIDTH = 8;
-    int i, j;
-    while (WIDTH > 0)
-    {
-        printf("x");
-        WIDTH--;
-    }
-
+    int a;
+    scanf("%d", &a);
+    int c;
+    for(c = 1; c <= a; c++)
+        printf("Hellouuu, world!\n");
     return 0;
 }
+

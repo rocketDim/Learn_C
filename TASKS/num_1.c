@@ -6,7 +6,7 @@ int main(void)
     int num_2 = 5;
     int result;
     result = sum(num_1, num_2);
-    printf("%d + %d = %d", num_1, num_2, result);
+    printf("%d + %d = %d\n", num_1, num_2, result);
     return 0;
 }
 int sum(int a, int b)
