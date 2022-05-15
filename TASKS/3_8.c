@@ -1,3 +1,4 @@
+// Таблица умножения
 #include <stdio.h>
 int main(void)
 {
