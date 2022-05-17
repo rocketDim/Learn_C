@@ -1,21 +1,30 @@
 #include <stdio.h>
 int main(void)
 {
+    // header
+    printf("  |");
     for (int i = 2; i <= 9; i++)
     {
         printf("%2d", i);
     }
     printf("\n");
-    for (int t = 2; t <= 9; t++)
+    // divider
+    for (int t = 0; t < 19; t++)
     {
-        printf(" -", t);
+        printf("-");
     }
     printf("\n");
-    for (int a = 2; a < 9; a++)
+    // body
+    for (int row = 2; row < 9; row++)
     {
-        printf("%d|\n", a);
+        printf("%d |", row);
+        for (int col = 2; col < 9; col++)
+        {
+            printf("%2d ", row * col);
+        }
+        printf("\n");
     }
     printf("\n");
-    
+
     return 0;
 }
