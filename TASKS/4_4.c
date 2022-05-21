@@ -3,7 +3,7 @@ int max3(int a, int b, int c);
 int main(void)
 {
     int num_1, num_2, num_3, result;
-    printf("Введите лри числа через пробел: ");
+    printf("Введите три числа через пробел: ");
     scanf("%d %d %d", &num_1, &num_2, &num_3);
     result = max3(num_1, num_2, num_3);
     printf("%d\n", result);
