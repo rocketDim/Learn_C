@@ -1,3 +1,4 @@
+//Программа считает рост в метрах 
 #include <stdio.h>
 int main(void)
 {
