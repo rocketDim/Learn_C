@@ -1,14 +1,16 @@
-// Пять видов операторов 2
+// Программа возводит число в куб
 #include <stdio.h>
+int cube(double a);
 int main(void)
 {
-    int count, sum, num;
-    count = 0;
-    sum = 0;
-    printf("Введите значение: ");
-    scanf("%d", &num);
-    while (count++ < num)
-        sum = sum + (count * count);
-    printf("sum = %d\n", sum);
+    double digit, result;
+    printf("Введите число для расчета: ");
+    scanf("%lf", &digit);
+    result = cube(digit);
+    printf("Результат: %.2lf\n", result);
     return 0;
+}
+int cube(double a)
+{
+    return (a * a * a);
 }
