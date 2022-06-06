@@ -20,4 +20,4 @@ int last_negativ_index(int arr[], int size)
         }
     }
     return result;
-}
+}   

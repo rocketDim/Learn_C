@@ -11,13 +11,13 @@ int main(void)
 
 int sum_negative(int arr[], int size)
 {
-    int sum = 0;
+    int num = 0;
     for (int i = 0; i < size; i++)
     {
-        if (arr[i] > 0)
+        if (arr[i] < 0)
         {
-            sum = sum + arr[i];
+            num = num + arr[i];
         }
     }
-    return sum;
+    return num;
 }
