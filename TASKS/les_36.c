@@ -21,7 +21,7 @@ void input_array(int nums[], int size)
         scanf("%d", &nums[i]);
     }
 }
-void inc_array(int nums[], int size)
+/*void inc_array(int nums[], int size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -35,4 +35,4 @@ void print_array(int nums[], int size)
         printf("%d ",nums[i]);
     }
     printf("\n");
-}
+}*/
