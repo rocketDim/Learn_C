@@ -33,7 +33,7 @@ int sum_from_m_to_n(int arr[], int size, int M, int N)
     int result = 0;
     for (int i = M; i <= N; i++)
     {
-        if (arr[i] < 0)
+        if (arr[i] < 0 && i % 2 == 1)
         {
             result = result + arr[i];
         }
