@@ -11,7 +11,7 @@ int main(void)
 {
     int size = 7;
     int arr[] = {2, 5, 6, 7, 9, 14, 24};
-    printf("Сумма первой половины равна: %d\n", sum_from_m_to_n(arr, size, 0, size / 2));
+    printf("Сумма первой половины равна: %d\n", sum_from_m_to_n(arr, size, 0, size / 2 - 1));
     printf("Сумма второй половины равна: %d\n", sum_from_m_to_n(arr, size, size / 2, size - 1));
     return 0;
 }
