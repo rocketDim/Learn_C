@@ -6,7 +6,7 @@ int search(int arr[], int size, int target);
 int main(void)
 {
     int size = 8;
-    int arr[] = {7, 13, 56, 77, 189, 0, 77, 5};
+    int arr[] = {7, 13, 56, 77, 189, 0, 78, 5};
     int Target = 77;
     printf("%d\n", search(arr, size, Target));
     return 0;

@@ -1,5 +1,6 @@
 //функция найти кол-во разных цифр массива
 #include <stdio.h>
+#include <stdbool.h>
 //{5, 13, 5, 77, 5, 56}
 // 4
 int main(void)
